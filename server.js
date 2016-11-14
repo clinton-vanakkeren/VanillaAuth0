@@ -13,6 +13,9 @@ app.use(express.static(__dirname));
 router.get('/', function(req,res){
   res.render('index');
 });
+router.get('/login', function(req,res){
+  res.render('index');
+});
 app.use(router);
 app.listen(port);
 console.log('magic happens on port'+' '+port);
